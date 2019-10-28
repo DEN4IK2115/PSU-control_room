@@ -1,0 +1,78 @@
+﻿namespace Airport
+{
+    partial class UserScroll
+    {
+        /// <summary> 
+        /// Обязательная переменная конструктора.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Освободить все используемые ресурсы.
+        /// </summary>
+        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Код, автоматически созданный конструктором компонентов
+
+        /// <summary> 
+        /// Требуемый метод для поддержки конструктора — не изменяйте 
+        /// содержимое этого метода с помощью редактора кода.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblText = new System.Windows.Forms.Label();
+            this.panelAll = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // lblText
+            // 
+            this.lblText.AutoSize = true;
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblText.Location = new System.Drawing.Point(108, -1);
+            this.lblText.MaximumSize = new System.Drawing.Size(300, 0);
+            this.lblText.MinimumSize = new System.Drawing.Size(300, 36);
+            this.lblText.Name = "lblText";
+            this.lblText.Size = new System.Drawing.Size(300, 36);
+            this.lblText.TabIndex = 0;
+            this.lblText.Text = "Your Elemens";
+            this.lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelAll
+            // 
+            this.panelAll.AutoScroll = true;
+            this.panelAll.Location = new System.Drawing.Point(0, 31);
+            this.panelAll.Name = "panelAll";
+            this.panelAll.Size = new System.Drawing.Size(518, 340);
+            this.panelAll.TabIndex = 1;
+            // 
+            // UserScroll
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.panelAll);
+            this.Controls.Add(this.lblText);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MaximumSize = new System.Drawing.Size(520, 385);
+            this.MinimumSize = new System.Drawing.Size(520, 385);
+            this.Name = "UserScroll";
+            this.Size = new System.Drawing.Size(518, 383);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.Panel panelAll;
+    }
+}
