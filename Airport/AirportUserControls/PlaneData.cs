@@ -33,9 +33,6 @@ namespace Airport
             BackColor = MainForm.MostlyBackColor;
             btnFly.BackColor = MainForm.MostlyBackColor;
             btnSell.BackColor = MainForm.MostlyBackColor;
-
-            btnFly.FlatAppearance.BorderSize = 1;
-            btnSell.FlatAppearance.BorderSize = 1;
             switch (type)
             {
                 case PlaneDataType.SelectPlane:
@@ -212,11 +209,6 @@ namespace Airport
                     }
                 }
             }
-        }
-
-        public Bitmap PictureValue
-        {
-            set {  }
         }
 
         public bool Check

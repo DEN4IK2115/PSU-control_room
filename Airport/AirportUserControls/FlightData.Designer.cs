@@ -46,7 +46,7 @@
             this.lblTypeValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTypeValue.AutoSize = true;
             this.lblTypeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTypeValue.Location = new System.Drawing.Point(296, 26);
+            this.lblTypeValue.Location = new System.Drawing.Point(59, 110);
             this.lblTypeValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTypeValue.MaximumSize = new System.Drawing.Size(110, 20);
             this.lblTypeValue.MinimumSize = new System.Drawing.Size(110, 20);
@@ -61,7 +61,7 @@
             this.lblType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblType.AutoSize = true;
             this.lblType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblType.Location = new System.Drawing.Point(243, 26);
+            this.lblType.Location = new System.Drawing.Point(14, 110);
             this.lblType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblType.MaximumSize = new System.Drawing.Size(45, 0);
             this.lblType.MinimumSize = new System.Drawing.Size(45, 20);
@@ -75,11 +75,11 @@
             // 
             this.btnGet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnGet.Location = new System.Drawing.Point(852, 9);
+            this.btnGet.Location = new System.Drawing.Point(274, 102);
             this.btnGet.Name = "btnGet";
-            this.btnGet.Size = new System.Drawing.Size(174, 29);
+            this.btnGet.Size = new System.Drawing.Size(190, 35);
             this.btnGet.TabIndex = 55;
-            this.btnGet.Text = "Оформить контракт";
+            this.btnGet.Text = "Взять рейс";
             this.btnGet.UseVisualStyleBackColor = true;
             this.btnGet.Click += new System.EventHandler(this.BtnGet_Click);
             // 
@@ -88,23 +88,22 @@
             this.lblPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblPrice.Location = new System.Drawing.Point(632, 26);
+            this.lblPrice.Location = new System.Drawing.Point(267, 50);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPrice.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblPrice.MinimumSize = new System.Drawing.Size(150, 20);
+            this.lblPrice.MaximumSize = new System.Drawing.Size(95, 0);
+            this.lblPrice.MinimumSize = new System.Drawing.Size(95, 20);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(150, 20);
+            this.lblPrice.Size = new System.Drawing.Size(95, 34);
             this.lblPrice.TabIndex = 54;
             this.lblPrice.Text = "Цена перелета:";
             this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPrice.Click += new System.EventHandler(this.lblPrice_Click);
             // 
             // lblFlight
             // 
             this.lblFlight.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblFlight.AutoSize = true;
             this.lblFlight.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFlight.Location = new System.Drawing.Point(25, 1);
+            this.lblFlight.Location = new System.Drawing.Point(14, 11);
             this.lblFlight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlight.MaximumSize = new System.Drawing.Size(88, 0);
             this.lblFlight.MinimumSize = new System.Drawing.Size(88, 20);
@@ -119,7 +118,7 @@
             this.lblPriceValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPriceValue.AutoSize = true;
             this.lblPriceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblPriceValue.Location = new System.Drawing.Point(755, 26);
+            this.lblPriceValue.Location = new System.Drawing.Point(370, 70);
             this.lblPriceValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPriceValue.MaximumSize = new System.Drawing.Size(90, 20);
             this.lblPriceValue.MinimumSize = new System.Drawing.Size(90, 20);
@@ -127,16 +126,15 @@
             this.lblPriceValue.Size = new System.Drawing.Size(90, 20);
             this.lblPriceValue.TabIndex = 52;
             this.lblPriceValue.Text = "Value";
-            this.lblPriceValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblPriceValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblPriceValue.UseWaitCursor = true;
-            this.lblPriceValue.Click += new System.EventHandler(this.lblPriceValue_Click);
             // 
             // lblDateValue
             // 
             this.lblDateValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDateValue.AutoSize = true;
             this.lblDateValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblDateValue.Location = new System.Drawing.Point(658, 3);
+            this.lblDateValue.Location = new System.Drawing.Point(73, 80);
             this.lblDateValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDateValue.MaximumSize = new System.Drawing.Size(187, 20);
             this.lblDateValue.MinimumSize = new System.Drawing.Size(187, 20);
@@ -144,15 +142,14 @@
             this.lblDateValue.Size = new System.Drawing.Size(187, 20);
             this.lblDateValue.TabIndex = 51;
             this.lblDateValue.Text = "Value";
-            this.lblDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblDateValue.Click += new System.EventHandler(this.lblDateValue_Click);
+            this.lblDateValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblDate
             // 
             this.lblDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblDate.Location = new System.Drawing.Point(632, 3);
+            this.lblDate.Location = new System.Drawing.Point(15, 80);
             this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDate.MaximumSize = new System.Drawing.Size(58, 0);
             this.lblDate.MinimumSize = new System.Drawing.Size(58, 20);
@@ -161,14 +158,13 @@
             this.lblDate.TabIndex = 50;
             this.lblDate.Text = "Дата:";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
             // 
             // lblFlightName
             // 
             this.lblFlightName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblFlightName.AutoSize = true;
             this.lblFlightName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFlightName.Location = new System.Drawing.Point(121, -2);
+            this.lblFlightName.Location = new System.Drawing.Point(102, 11);
             this.lblFlightName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlightName.MaximumSize = new System.Drawing.Size(360, 32);
             this.lblFlightName.MinimumSize = new System.Drawing.Size(360, 32);
@@ -177,15 +173,13 @@
             this.lblFlightName.TabIndex = 47;
             this.lblFlightName.Text = "City1 - City2";
             this.lblFlightName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblFlightName.Click += new System.EventHandler(this.lblFlightName_Click);
             // 
             // lblFlightTypeValue
             // 
             this.lblFlightTypeValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFlightTypeValue.AutoSize = true;
             this.lblFlightTypeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFlightTypeValue.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblFlightTypeValue.Location = new System.Drawing.Point(165, 28);
+            this.lblFlightTypeValue.Location = new System.Drawing.Point(187, 50);
             this.lblFlightTypeValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlightTypeValue.MaximumSize = new System.Drawing.Size(170, 20);
             this.lblFlightTypeValue.MinimumSize = new System.Drawing.Size(70, 20);
@@ -193,7 +187,7 @@
             this.lblFlightTypeValue.Size = new System.Drawing.Size(70, 20);
             this.lblFlightTypeValue.TabIndex = 49;
             this.lblFlightTypeValue.Text = "Value";
-            this.lblFlightTypeValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblFlightTypeValue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblFlightType
             // 
@@ -203,7 +197,7 @@
             this.lblFlightType.AutoSize = true;
             this.lblFlightType.BackColor = System.Drawing.Color.Transparent;
             this.lblFlightType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFlightType.Location = new System.Drawing.Point(27, 27);
+            this.lblFlightType.Location = new System.Drawing.Point(14, 52);
             this.lblFlightType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFlightType.MaximumSize = new System.Drawing.Size(175, 0);
             this.lblFlightType.MinimumSize = new System.Drawing.Size(175, 20);
@@ -218,23 +212,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.lblFlightTypeValue);
-            this.Controls.Add(this.lblFlightType);
             this.Controls.Add(this.lblTypeValue);
             this.Controls.Add(this.lblType);
             this.Controls.Add(this.btnGet);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblFlight);
             this.Controls.Add(this.lblPriceValue);
+            this.Controls.Add(this.lblDateValue);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblFlightName);
-            this.Controls.Add(this.lblDateValue);
-            this.Controls.Add(this.lblPrice);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Controls.Add(this.lblFlightTypeValue);
+            this.Controls.Add(this.lblFlightType);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MaximumSize = new System.Drawing.Size(1035, 50);
-            this.MinimumSize = new System.Drawing.Size(1035, 50);
+            this.MaximumSize = new System.Drawing.Size(480, 150);
+            this.MinimumSize = new System.Drawing.Size(480, 150);
             this.Name = "FlightData";
-            this.Size = new System.Drawing.Size(1033, 48);
+            this.Size = new System.Drawing.Size(478, 148);
             this.ResumeLayout(false);
             this.PerformLayout();
 

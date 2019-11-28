@@ -144,7 +144,7 @@ namespace Airport.GameLogic
         //Метод для получения цены на топливо
         public decimal GetFuelPrice()
         {
-            return 80;
+            return fuelPrice;
         }
         #endregion
         #region Методы для получения информации о состоянии дел игрока
@@ -460,7 +460,7 @@ namespace Airport.GameLogic
         //Функция, имитирующая динамическую цену на топливо
         private void ChangeFuelPrice()
         {
-            fuelPrice = BaseFuelPrice;
+            fuelPrice = currentGameDate.Hour * FuelPriceTimeCoeff + BaseFuelPrice;
             FuelPriceChanged?.Invoke(this, fuelPrice);
         }
 

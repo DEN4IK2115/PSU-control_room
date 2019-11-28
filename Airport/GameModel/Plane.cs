@@ -70,7 +70,35 @@ namespace Airport.GameModel
                 DeprecationDegreeChanged?.Invoke(this, deprecationDegree);
             }
         }
-        
+
+        //Изображение самолета
+        public Bitmap Picture
+        {
+            get
+            {
+                Bitmap picture = null;
+                switch (Model)
+                {
+                    case Models.AirbusA330_200:
+                        {
+                            picture = Resources.AirbusA330_200;
+                        }
+                        break;
+                    case Models.Boeing747_8I:
+                        {
+                            picture = Resources.Boeing747_8i;
+                        }
+                        break;
+                    case Models.McDonnelDouglasMD11F:
+                        {
+                            picture = Resources.McDonnelDouglasMD11F;
+                        }
+                        break;
+                }
+                return picture;
+            }
+        }
+
         public Plane(string ID, Models model, Owns own, MarketContract marketContract = null)
         {
             this.ID = ID;

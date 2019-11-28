@@ -61,13 +61,15 @@ namespace Airport.GameViewController
             lblDateValue.Text = game.GetCurrentDateTime().ToLongDateString();
             lblBalanceValue.Text = "$ " + game.GetSavings().ToString();
             lblTimeValue.Text = game.GetCurrentDateTime().TimeOfDay.ToString("hh\\:mm");
+            lblFuelValue.Text = "$ " + game.GetFuelPrice().ToString();
 
             game.SavingsChanged += Game_SavingsChanged;
             game.DateChanged += Game_DateChanged;
+            game.FuelPriceChanged += Game_FuelPriceChanged;
             
-            btnUpOne.FlatAppearance.BorderSize = 1;
-            btnUpTwo.FlatAppearance.BorderSize = 1;
-            btnUpThree.FlatAppearance.BorderSize = 1;
+            btnUpOne.FlatAppearance.BorderSize = 0;
+            btnUpTwo.FlatAppearance.BorderSize = 0;
+            btnUpThree.FlatAppearance.BorderSize = 0;
 
             InitLayoutControls();
             StartupLayoutInit();
@@ -213,10 +215,10 @@ namespace Airport.GameViewController
                                 else userBoard.GetPanel.Controls.Remove(flightsUI[removedFlight.Number]);
                                 flightsUI.Remove(removedFlight.Number);
                             }
-                        startBoardX = 0;
+                        startBoardX = 20;
                         startBoardY = 0;
-                        newBoardX = 5;
-                        isFirstX = false; List<Control> controls = new List<Control>();
+                        newBoardX = 0;
+                        isFirstX = true; List<Control> controls = new List<Control>();
                         foreach (Control control in userBoard.GetPanel.Controls)
                             controls.Add(control);
                         if (userBoard.GetPanel.IsHandleCreated)
@@ -289,10 +291,15 @@ namespace Airport.GameViewController
         private void Game_GameOver(object sender, EventArgs e)
         {
             game.Stop();
-            MessageBox.Show("Всё.", "Game Over",
+            MessageBox.Show("А у вас деньги закончились, и вы теперь не директор авиакомпании, а обычный безработный", "Game Over",
                 MessageBoxButtons.OK);
         }
-        
+
+        private void Game_FuelPriceChanged(object sender, decimal newFuelPrice)
+        {
+            FuelValue = newFuelPrice;
+        }
+
         private void Game_DateChanged(object sender, DateTime gameDate)
         {
             DateTime oldDate = DateValue;
@@ -349,22 +356,22 @@ namespace Airport.GameViewController
             int mainX = 14, mainY = 110, mainNewX = mainX + userAiroportPlanes.Width + 20;
 
             userAiroportPlanes.SetLocation(mainX, mainY);
-            userAiroportPlanes.Text = "Доступные самолеты";
+            userAiroportPlanes.Text = "Ваши самолеты";
             this.Controls.Add(userAiroportPlanes);
 
             userAiroportContracts.SetLocation(mainNewX, mainY);
-            userAiroportContracts.Text = "Контракты";
+            userAiroportContracts.Text = "Ваши контракты";
             this.Controls.Add(userAiroportContracts);
 
             userBoard.SetLocation(mainX, mainY);
             this.Controls.Add(userBoard);
 
             userMarketPlanesSell.SetLocation(mainX, mainY);
-            userMarketPlanesSell.Text = "Доступные самолеты";
+            userMarketPlanesSell.Text = "Ваши самолеты";
             this.Controls.Add(userMarketPlanesSell);
 
             userMarketPlanesBuy.SetLocation(mainNewX, mainY);
-            userMarketPlanesBuy.Text = "Магазин";
+            userMarketPlanesBuy.Text = "Покупка самолетов";
             this.Controls.Add(userMarketPlanesBuy);
         }
 
@@ -460,10 +467,10 @@ namespace Airport.GameViewController
         private void FillBoard()
         {
             // основные характеристики
-            startBoardX = 0;
+            startBoardX = 20;
             startBoardY = 0;
-            newBoardX = 5;
-            isFirstX = false;
+            newBoardX = 0;
+            isFirstX = true;
             foreach (var flight in game.GetFlightsInfo())
                 AddFlight(flight);
         }
@@ -491,7 +498,8 @@ namespace Airport.GameViewController
                 flightData.Invoke(new Action(() => flightData.Location = new Point(isFirstX ? startBoardX : newBoardX, startBoardY)));
             else flightData.Location = new Point(isFirstX ? startBoardX : newBoardX, startBoardY);
             startBoardY = isFirstX ? startBoardY : startBoardY + flightData.Height + 10;
-            isFirstX = false;
+            newBoardX = startBoardX + flightData.Width + 30;
+            isFirstX = !isFirstX;
             if (userBoard.IsHandleCreated)
                 userBoard.Invoke(new Action(() => userBoard.GetPanel.Controls.Add(flightData)));
             else userBoard.GetPanel.Controls.Add(flightData);
@@ -514,7 +522,12 @@ namespace Airport.GameViewController
             get { return TimeSpan.Parse(lblTimeValue.Text); }
             set { if (lblTimeValue.IsHandleCreated) lblTimeValue.Invoke(new Action(() => lblTimeValue.Text = value.ToString("hh\\:mm"))); }
         }
-        
+
+        private decimal FuelValue
+        {
+            get { return decimal.Parse(lblFuelValue.Text.Replace("$ ", "")); }
+            set { if (lblFuelValue.IsHandleCreated) lblFuelValue.Invoke(new Action(() => lblFuelValue.Text = "$ " + value.ToString())); }
+        }
 
         private void StartupLayoutInit()
         {
@@ -530,6 +543,8 @@ namespace Airport.GameViewController
             StartupLayoutInit();
             lblTime.Visible = true;
             lblTimeValue.Visible = true;
+            lblFuel.Visible = true;
+            lblFuelValue.Visible = true;
         }
 
         private void BtnBoard_Click(object sender, EventArgs e)
@@ -541,6 +556,8 @@ namespace Airport.GameViewController
             userMarketPlanesBuy.Visible = false;
             lblTime.Visible = true;
             lblTimeValue.Visible = true;
+            lblFuel.Visible = true;
+            lblFuelValue.Visible = true;
         }
 
         private void BtnPlanesMarket_Click(object sender, EventArgs e)
@@ -552,6 +569,8 @@ namespace Airport.GameViewController
             userAiroportContracts.Visible = false;
             lblTime.Visible = true;
             lblTimeValue.Visible = true;
+            lblFuel.Visible = true;
+            lblFuelValue.Visible = true;
         }
 
 

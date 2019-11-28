@@ -26,11 +26,13 @@ namespace Airport
             {
                 lblFlightType.Text = "Пассажиры:";
                 lblFlightType.Width = 109;
+                lblFlightTypeValue.Location = new Point(124, 55);
             }
             else
             {
                 lblFlightType.Text = "Грузоподъемность:";
                 lblFlightType.Width = 175;
+                lblFlightTypeValue.Location = new Point(190, 55);
             }
         }
 
@@ -88,31 +90,6 @@ namespace Airport
         private void BtnGet_Click(object sender, EventArgs e)
         {
             game.SignContract(flight.Number);
-        }
-
-        private void lblPrice_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPriceValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDateValue_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblFlightName_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

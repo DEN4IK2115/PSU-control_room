@@ -41,14 +41,15 @@
             this.btnUpTwo = new System.Windows.Forms.Button();
             this.btnUpOne = new System.Windows.Forms.Button();
             this.picDate = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblFuelValue = new System.Windows.Forms.Label();
+            this.lblFuel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picDate)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAirline
             // 
             this.btnAirline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAirline.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAirline.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnAirline.Location = new System.Drawing.Point(1, 0);
             this.btnAirline.Margin = new System.Windows.Forms.Padding(0);
             this.btnAirline.Name = "btnAirline";
@@ -61,7 +62,7 @@
             // btnBoard
             // 
             this.btnBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBoard.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnBoard.Location = new System.Drawing.Point(189, 0);
             this.btnBoard.Name = "btnBoard";
             this.btnBoard.Size = new System.Drawing.Size(212, 45);
@@ -75,7 +76,7 @@
             this.btnPlanesMarket.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPlanesMarket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlanesMarket.Font = new System.Drawing.Font("Arial", 9F);
+            this.btnPlanesMarket.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPlanesMarket.Location = new System.Drawing.Point(400, 0);
             this.btnPlanesMarket.Name = "btnPlanesMarket";
             this.btnPlanesMarket.Size = new System.Drawing.Size(401, 45);
@@ -116,10 +117,13 @@
             // 
             // lblBalanceValue
             // 
+            this.lblBalanceValue.AutoSize = true;
             this.lblBalanceValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblBalanceValue.Location = new System.Drawing.Point(12, 64);
+            this.lblBalanceValue.Location = new System.Drawing.Point(109, 54);
+            this.lblBalanceValue.MaximumSize = new System.Drawing.Size(170, 0);
+            this.lblBalanceValue.MinimumSize = new System.Drawing.Size(170, 0);
             this.lblBalanceValue.Name = "lblBalanceValue";
-            this.lblBalanceValue.Size = new System.Drawing.Size(269, 34);
+            this.lblBalanceValue.Size = new System.Drawing.Size(170, 29);
             this.lblBalanceValue.TabIndex = 9;
             this.lblBalanceValue.Text = "Value";
             // 
@@ -127,7 +131,7 @@
             // 
             this.lblTimeValue.AutoSize = true;
             this.lblTimeValue.BackColor = System.Drawing.Color.White;
-            this.lblTimeValue.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTimeValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblTimeValue.Location = new System.Drawing.Point(914, 28);
             this.lblTimeValue.MaximumSize = new System.Drawing.Size(72, 0);
             this.lblTimeValue.MinimumSize = new System.Drawing.Size(72, 0);
@@ -140,50 +144,46 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.White;
-            this.lblTime.Font = new System.Drawing.Font("Arial", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblTime.Location = new System.Drawing.Point(851, 28);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(47, 15);
+            this.lblTime.Size = new System.Drawing.Size(54, 15);
             this.lblTime.TabIndex = 10;
             this.lblTime.Text = "Время:";
             // 
             // btnUpThree
             // 
+            this.btnUpThree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpThree.BackgroundImage")));
             this.btnUpThree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpThree.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(204)));
-            this.btnUpThree.Location = new System.Drawing.Point(987, 48);
+            this.btnUpThree.Location = new System.Drawing.Point(1015, 79);
             this.btnUpThree.Name = "btnUpThree";
-            this.btnUpThree.Size = new System.Drawing.Size(96, 25);
+            this.btnUpThree.Size = new System.Drawing.Size(55, 25);
             this.btnUpThree.TabIndex = 14;
-            this.btnUpThree.Text = "очень быстро";
             this.btnUpThree.UseVisualStyleBackColor = true;
             this.btnUpThree.Click += new System.EventHandler(this.BtnUpThree_Click);
             // 
             // btnUpTwo
             // 
+            this.btnUpTwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpTwo.BackgroundImage")));
             this.btnUpTwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpTwo.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpTwo.Location = new System.Drawing.Point(889, 48);
+            this.btnUpTwo.Location = new System.Drawing.Point(960, 79);
             this.btnUpTwo.Name = "btnUpTwo";
-            this.btnUpTwo.Size = new System.Drawing.Size(103, 25);
+            this.btnUpTwo.Size = new System.Drawing.Size(40, 25);
             this.btnUpTwo.TabIndex = 13;
-            this.btnUpTwo.Text = "быстро";
             this.btnUpTwo.UseVisualStyleBackColor = true;
             this.btnUpTwo.Click += new System.EventHandler(this.BtnUpTwo_Click);
             // 
             // btnUpOne
             // 
+            this.btnUpOne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpOne.BackgroundImage")));
             this.btnUpOne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnUpOne.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnUpOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpOne.Location = new System.Drawing.Point(801, 48);
+            this.btnUpOne.Location = new System.Drawing.Point(917, 79);
             this.btnUpOne.Name = "btnUpOne";
-            this.btnUpOne.Size = new System.Drawing.Size(90, 25);
+            this.btnUpOne.Size = new System.Drawing.Size(25, 25);
             this.btnUpOne.TabIndex = 12;
-            this.btnUpOne.Text = "нормально";
             this.btnUpOne.UseVisualStyleBackColor = true;
             this.btnUpOne.Click += new System.EventHandler(this.BtnUpOne_Click);
             // 
@@ -199,14 +199,27 @@
             this.picDate.TabIndex = 6;
             this.picDate.TabStop = false;
             // 
-            // label1
+            // lblFuelValue
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(712, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 15);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Темп игры";
+            this.lblFuelValue.AutoSize = true;
+            this.lblFuelValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFuelValue.Location = new System.Drawing.Point(405, 54);
+            this.lblFuelValue.MaximumSize = new System.Drawing.Size(100, 0);
+            this.lblFuelValue.MinimumSize = new System.Drawing.Size(100, 0);
+            this.lblFuelValue.Name = "lblFuelValue";
+            this.lblFuelValue.Size = new System.Drawing.Size(100, 15);
+            this.lblFuelValue.TabIndex = 16;
+            this.lblFuelValue.Text = "Value";
+            // 
+            // lblFuel
+            // 
+            this.lblFuel.AutoSize = true;
+            this.lblFuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFuel.Location = new System.Drawing.Point(260, 54);
+            this.lblFuel.Name = "lblFuel";
+            this.lblFuel.Size = new System.Drawing.Size(125, 15);
+            this.lblFuel.TabIndex = 15;
+            this.lblFuel.Text = "Цена на топливо:";
             // 
             // MainForm
             // 
@@ -214,7 +227,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1084, 511);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFuelValue);
+            this.Controls.Add(this.lblFuel);
             this.Controls.Add(this.btnUpThree);
             this.Controls.Add(this.btnUpTwo);
             this.Controls.Add(this.btnUpOne);
@@ -254,7 +268,8 @@
         private System.Windows.Forms.Button btnUpOne;
         private System.Windows.Forms.Button btnUpTwo;
         private System.Windows.Forms.Button btnUpThree;
+        private System.Windows.Forms.Label lblFuelValue;
+        private System.Windows.Forms.Label lblFuel;
         public System.Windows.Forms.Label lblBalanceValue;
-        private System.Windows.Forms.Label label1;
     }
 }

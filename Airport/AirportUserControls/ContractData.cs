@@ -27,12 +27,12 @@ namespace Airport
             BackColor = MainForm.MostlyBackColor;
             btnDo.BackColor = MainForm.MostlyBackColor;
             btnDelete.BackColor = MainForm.MostlyBackColor;
-            btnDelete.FlatAppearance.BorderSize = 1;
             btnDelete.FlatStyle = FlatStyle.Flat;
             if (isPassenger)
             {
                 lblType.Text = "Пассажиры:";
                 lblType.Width = 109;
+                lblTypeValue.Location = new Point(124, 80);
                 lblTime.Visible = false;
                 lblTimeValue.Visible = false;
             }
@@ -40,6 +40,7 @@ namespace Airport
             {
                 lblType.Text = "Грузоподъемность:";
                 lblType.Width = 175;
+                lblTypeValue.Location = new Point(190, 80);
                 lblTime.Visible = false;
                 lblTimeValue.Visible = false;
             }
@@ -131,16 +132,6 @@ namespace Airport
                 return;
             foreach (Flight flight in contract.ConnectedFlights)
                 game.CancelContract(flight.Number);
-        }
-
-        private void lblDate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDateValue_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -37,7 +37,25 @@ namespace Airport.AirportUserControls
             btnBuy.BackColor = MainForm.MostlyBackColor;
             cbType.BackColor = MainForm.MostlyBackColor;
             cbType.Items.AddRange(new object[] { "Покупка", "Аренда", "Лизинг" });
-            btnBuy.FlatAppearance.BorderSize = 1;
+            Bitmap picture = null;
+            switch (model)
+            {
+                case Plane.Models.AirbusA330_200:
+                    {
+                        picture = Resources.AirbusA330_200;
+                    }
+                    break;
+                case Plane.Models.Boeing747_8I:
+                    {
+                        picture = Resources.Boeing747_8i;
+                    }
+                    break;
+                case Plane.Models.McDonnelDouglasMD11F:
+                    {
+                        picture = Resources.McDonnelDouglasMD11F;
+                    }
+                    break;
+            }
             this.model = model;
             this.game = game;
             PlaneName = model.ToString();
@@ -113,12 +131,7 @@ namespace Airport.AirportUserControls
             get { return int.Parse(lblDayValue.Text.Replace("(", "").Replace(" дней)", "")); }
             set { lblDayValue.Text = "(" + value + " дней)"; }
         }
-
-        public Bitmap PictureValue
-        {
-            set { }
-        }
-
+        
         public event EventHandler OnActionSellBuy
         {
             add { btnBuy.Click += value; }

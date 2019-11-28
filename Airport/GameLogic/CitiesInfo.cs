@@ -10,9 +10,9 @@ namespace Airport.GameLogic
         public static readonly Dictionary<string, City> cities = new Dictionary<string, City>
         {
             { "1", new City("1", "Пермь") },
-            { "2", new City("2", "Астана") },
-            { "3", new City("3", "Анталья") },
-            { "4", new City("4", "Париж") }
+            { "2", new City("2", "Москва") },
+            { "3", new City("3", "Киев") },
+            { "4", new City("4", "Алма-Ата") }
         };
 
         //Список имеющихся путей для перелетов с указанием связанных пунктов и расстояний

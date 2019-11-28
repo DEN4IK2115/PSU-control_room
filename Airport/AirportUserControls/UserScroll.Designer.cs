@@ -36,7 +36,7 @@
             // 
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblText.Location = new System.Drawing.Point(108, -1);
+            this.lblText.Location = new System.Drawing.Point(110, 12);
             this.lblText.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblText.MinimumSize = new System.Drawing.Size(300, 36);
             this.lblText.Name = "lblText";
@@ -48,14 +48,14 @@
             // panelAll
             // 
             this.panelAll.AutoScroll = true;
-            this.panelAll.Location = new System.Drawing.Point(0, 31);
+            this.panelAll.Location = new System.Drawing.Point(0, 51);
             this.panelAll.Name = "panelAll";
-            this.panelAll.Size = new System.Drawing.Size(518, 340);
+            this.panelAll.Size = new System.Drawing.Size(518, 320);
             this.panelAll.TabIndex = 1;
             // 
             // UserScroll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panelAll);
