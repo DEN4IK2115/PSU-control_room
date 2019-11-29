@@ -230,12 +230,16 @@ namespace Airport
             {
                 if (CityName.Equals(dialog.SelectedCity.Name))
                     MessageBox.Show("Увы, самолёт уже там.");
-                else
+                else if (plane.status != "В полёте")
                 {
                     MessageBox.Show($"На перелет будет потрачено {game.RebasePlane(plane.ID, dialog.SelectedCity.ID)}$");
                     btnFly.Enabled = false;
                     CityName = "В полёте";
                     plane.status = "В полёте";
+                }
+                else
+                {
+                    MessageBox.Show("Самолёт уже в полёте.");
                 }
             }
             else
