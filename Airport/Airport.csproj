@@ -180,9 +180,7 @@
     <Content Include="IcoForInterfaces\upone.png" />
     <Content Include="IcoForInterfaces\upthree.png" />
     <Content Include="IcoForInterfaces\uptwo.png" />
-    <Content Include="PicturesOfPlanes\AirbusA330-200.jpg" />
-    <Content Include="PicturesOfPlanes\Boeing747-8i.jpg" />
-    <Content Include="PicturesOfPlanes\McDonnelDouglasMD11F.jpg" />
+    <None Include="Resources\btnUpOne.BackgroundImage.png" />
     <None Include="Properties\PicturesOfPlanes\McDonnelDouglasMD11F.jpg" />
     <None Include="Properties\PicturesOfPlanes\Boeing747-8i.jpg" />
     <None Include="Properties\PicturesOfPlanes\AirbusA330-200.jpg" />

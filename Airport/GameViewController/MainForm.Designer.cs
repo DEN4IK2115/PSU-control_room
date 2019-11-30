@@ -156,9 +156,9 @@
             this.btnUpThree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpThree.BackgroundImage")));
             this.btnUpThree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUpThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpThree.Location = new System.Drawing.Point(1015, 79);
+            this.btnUpThree.Location = new System.Drawing.Point(1005, 68);
             this.btnUpThree.Name = "btnUpThree";
-            this.btnUpThree.Size = new System.Drawing.Size(55, 25);
+            this.btnUpThree.Size = new System.Drawing.Size(57, 33);
             this.btnUpThree.TabIndex = 14;
             this.btnUpThree.UseVisualStyleBackColor = true;
             this.btnUpThree.Click += new System.EventHandler(this.BtnUpThree_Click);
@@ -168,9 +168,9 @@
             this.btnUpTwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpTwo.BackgroundImage")));
             this.btnUpTwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUpTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpTwo.Location = new System.Drawing.Point(960, 79);
+            this.btnUpTwo.Location = new System.Drawing.Point(959, 68);
             this.btnUpTwo.Name = "btnUpTwo";
-            this.btnUpTwo.Size = new System.Drawing.Size(40, 25);
+            this.btnUpTwo.Size = new System.Drawing.Size(40, 33);
             this.btnUpTwo.TabIndex = 13;
             this.btnUpTwo.UseVisualStyleBackColor = true;
             this.btnUpTwo.Click += new System.EventHandler(this.BtnUpTwo_Click);
@@ -180,9 +180,9 @@
             this.btnUpOne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpOne.BackgroundImage")));
             this.btnUpOne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUpOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpOne.Location = new System.Drawing.Point(917, 79);
+            this.btnUpOne.Location = new System.Drawing.Point(915, 68);
             this.btnUpOne.Name = "btnUpOne";
-            this.btnUpOne.Size = new System.Drawing.Size(25, 25);
+            this.btnUpOne.Size = new System.Drawing.Size(38, 33);
             this.btnUpOne.TabIndex = 12;
             this.btnUpOne.UseVisualStyleBackColor = true;
             this.btnUpOne.Click += new System.EventHandler(this.BtnUpOne_Click);
