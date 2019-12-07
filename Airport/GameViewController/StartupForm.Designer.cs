@@ -72,10 +72,10 @@
             // 
             // StartupForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(582, 353);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(600, 400);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPrevGame);
             this.Controls.Add(this.btnNewGame);

@@ -40,24 +40,26 @@
             // 
             // btnAddFlight
             // 
+            this.btnAddFlight.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddFlight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddFlight.Location = new System.Drawing.Point(238, 576);
             this.btnAddFlight.Name = "btnAddFlight";
             this.btnAddFlight.Size = new System.Drawing.Size(157, 53);
             this.btnAddFlight.TabIndex = 0;
             this.btnAddFlight.Text = "Назначить рейс";
-            this.btnAddFlight.UseVisualStyleBackColor = true;
+            this.btnAddFlight.UseVisualStyleBackColor = false;
             this.btnAddFlight.Click += new System.EventHandler(this.BtnAddFlight_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Location = new System.Drawing.Point(416, 576);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(122, 53);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Отмена";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // lblTime
@@ -66,7 +68,7 @@
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblTime.Location = new System.Drawing.Point(30, 456);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(154, 25);
+            this.lblTime.Size = new System.Drawing.Size(123, 20);
             this.lblTime.TabIndex = 2;
             this.lblTime.Text = "Время вылета:";
             // 
@@ -104,15 +106,16 @@
             this.tbTimeValue.MinimumSize = new System.Drawing.Size(200, 38);
             this.tbTimeValue.Name = "tbTimeValue";
             this.tbTimeValue.ResetOnSpace = false;
-            this.tbTimeValue.Size = new System.Drawing.Size(200, 38);
+            this.tbTimeValue.Size = new System.Drawing.Size(200, 19);
             this.tbTimeValue.TabIndex = 9;
             this.tbTimeValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbTimeValue.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TbTimeValue_MouseClick);
             // 
             // ContractForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(560, 650);
             this.Controls.Add(this.tbTimeValue);
             this.Controls.Add(this.picTime);

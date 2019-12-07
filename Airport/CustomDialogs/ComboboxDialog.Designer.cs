@@ -41,7 +41,7 @@
             this.citiesCB.Location = new System.Drawing.Point(0, 0);
             this.citiesCB.Margin = new System.Windows.Forms.Padding(4);
             this.citiesCB.Name = "citiesCB";
-            this.citiesCB.Size = new System.Drawing.Size(459, 26);
+            this.citiesCB.Size = new System.Drawing.Size(459, 23);
             this.citiesCB.TabIndex = 0;
             // 
             // btnOK
@@ -70,10 +70,11 @@
             // 
             // ComboboxDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(459, 93);
             this.ControlBox = false;
             this.Controls.Add(this.btnCancel);

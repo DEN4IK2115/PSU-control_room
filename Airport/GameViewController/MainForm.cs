@@ -34,7 +34,7 @@ namespace Airport.GameViewController
         ObservableCollection<Flight> flights;
         ObservableCollection<Plane> planes;
      
-        public static Color MostlyBackColor { get { return Color.FromArgb(225,225,225); } }
+        public static Color MostlyBackColor { get { return Color.FromArgb(240,248,255); } }
 
         int contractsStartX = 10;
         int contractsStartY = 5;

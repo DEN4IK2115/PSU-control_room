@@ -45,6 +45,7 @@
             // 
             // cbType
             // 
+            this.cbType.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbType.FormattingEnabled = true;
             this.cbType.Location = new System.Drawing.Point(367, 69);
@@ -231,6 +232,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblMaxValue);
             this.Controls.Add(this.lblRangeValue);

@@ -48,6 +48,8 @@
             // panelAll
             // 
             this.panelAll.AutoScroll = true;
+            this.panelAll.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelAll.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panelAll.Location = new System.Drawing.Point(0, 51);
             this.panelAll.Name = "panelAll";
             this.panelAll.Size = new System.Drawing.Size(518, 320);
@@ -55,12 +57,14 @@
             // 
             // UserScroll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.panelAll);
             this.Controls.Add(this.lblText);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximumSize = new System.Drawing.Size(520, 385);
             this.MinimumSize = new System.Drawing.Size(520, 385);
             this.Name = "UserScroll";

@@ -87,6 +87,7 @@
             // 
             this.lblCityName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCityName.AutoSize = true;
+            this.lblCityName.BackColor = System.Drawing.SystemColors.Window;
             this.lblCityName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblCityName.Location = new System.Drawing.Point(97, 65);
             this.lblCityName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -348,6 +349,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblMarketContract);
             this.Controls.Add(this.lblMarketDaysValue);
@@ -370,6 +372,7 @@
             this.Controls.Add(this.lblCityName);
             this.Controls.Add(this.lblCity);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(480, 150);
             this.MinimumSize = new System.Drawing.Size(480, 150);

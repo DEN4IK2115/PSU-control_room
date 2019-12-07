@@ -33,6 +33,7 @@ namespace Airport
             BackColor = MainForm.MostlyBackColor;
             btnFly.BackColor = MainForm.MostlyBackColor;
             btnSell.BackColor = MainForm.MostlyBackColor;
+            lblCityName.BackColor = MainForm.MostlyBackColor;
             switch (type)
             {
                 case PlaneDataType.SelectPlane:
